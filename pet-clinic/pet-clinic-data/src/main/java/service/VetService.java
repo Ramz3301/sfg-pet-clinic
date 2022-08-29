@@ -1,6 +1,5 @@
 package service;
 
-import com.ramz.petclinic.model.Owner;
 import com.ramz.petclinic.model.Vet;
 
 import java.util.Set;

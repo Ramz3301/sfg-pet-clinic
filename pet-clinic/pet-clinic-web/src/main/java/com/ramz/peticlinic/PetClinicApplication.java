@@ -10,8 +10,4 @@ public class PetClinicApplication {
 		SpringApplication.run(PetClinicApplication.class, args);
 	}
 
-	static class A {
-
-	}
-
 }
