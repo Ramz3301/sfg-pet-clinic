@@ -1,12 +1,12 @@
 package service.map;
 
 import com.ramz.petclinic.model.Vet;
-import service.CrudService;
+import service.VetService;
 
 import java.util.Set;
 
 public class VetServiceMap extends AbstractMapService<Vet, Long>
-        implements CrudService<Vet, Long> {
+        implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
