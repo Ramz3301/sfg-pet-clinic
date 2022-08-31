@@ -1,4 +1,4 @@
-package service.map;
+package com.ramz.peticlinic.service.map;
 
 import java.util.HashMap;
 import java.util.HashSet;

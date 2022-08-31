@@ -2,12 +2,11 @@ package com.ramz.peticlinic.bootstrap;
 
 import com.ramz.petclinic.model.Owner;
 import com.ramz.petclinic.model.Vet;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
-import service.OwnerService;
-import service.VetService;
-import service.map.OwnerServiceMap;
-import service.map.VetServiceMap;
+import com.ramz.peticlinic.service.OwnerService;
+import com.ramz.peticlinic.service.VetService;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -15,9 +14,10 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new VetServiceMap();
+    @Autowired
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

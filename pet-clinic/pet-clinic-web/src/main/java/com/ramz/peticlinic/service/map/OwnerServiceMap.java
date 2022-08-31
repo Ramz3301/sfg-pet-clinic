@@ -1,10 +1,12 @@
-package service.map;
+package com.ramz.peticlinic.service.map;
 
 import com.ramz.petclinic.model.Owner;
-import service.OwnerService;
+import org.springframework.stereotype.Service;
+import com.ramz.peticlinic.service.OwnerService;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long>
         implements OwnerService {
 

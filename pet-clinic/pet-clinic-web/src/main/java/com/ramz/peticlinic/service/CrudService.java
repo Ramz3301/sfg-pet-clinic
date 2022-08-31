@@ -1,4 +1,4 @@
-package service;
+package com.ramz.peticlinic.service;
 
 import java.util.Set;
 
