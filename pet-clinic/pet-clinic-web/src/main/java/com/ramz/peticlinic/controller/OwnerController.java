@@ -1,6 +1,5 @@
 package com.ramz.peticlinic.controller;
 
-import com.ramz.petclinic.model.Owner;
 import com.ramz.peticlinic.service.OwnerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -23,10 +22,11 @@ public class OwnerController {
         return "owners/index";
     }
 
-//    @RequestMapping("/find")
-//    public String findOwners(Model model){
+    @RequestMapping("/find")
+    public String findOwners(Model model){
 //        model.addAttribute("owner", Owner.builder().build());
 //        return "owners/findOwners";
-//    }
+        return "notImplementedYet";
+    }
 
 }
