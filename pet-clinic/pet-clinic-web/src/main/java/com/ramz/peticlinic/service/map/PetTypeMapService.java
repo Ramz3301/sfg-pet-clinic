@@ -2,9 +2,11 @@ package com.ramz.peticlinic.service.map;
 
 import com.ramz.petclinic.model.PetType;
 import com.ramz.peticlinic.service.PetTypeService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class PetTypeMapService extends AbstractMapService<PetType, Long>
         implements PetTypeService {
 
